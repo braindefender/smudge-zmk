@@ -1,0 +1,10 @@
+file_format: "1"
+id: smudge
+name: Smudge
+type: shield
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - smudge_left
+  - smudge_right
