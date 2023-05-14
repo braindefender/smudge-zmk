@@ -8,3 +8,5 @@
 ### Useful links
 - [ZMK Behaviors](https://zmk.dev/docs/behaviors/key-press)
 - [ZMK Keycodes](https://zmk.dev/docs/codes)
+- [Key Test](https://en.key-test.ru/)
+- [Typing Practise](https://www.keybr.com/)
