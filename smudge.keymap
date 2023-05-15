@@ -18,28 +18,28 @@
 
         default_layer {
             bindings = <
-   &kp Y      &kp U        &kp I      &kp O     &kp P       &none           &none  &none  &none  &none  &none  &none
-   &kp H      &kp J        &kp K      &kp L     &kp SEMI    &kp RET         &none  &none  &none  &none  &none  &none
-   &kp N      &kp M        &kp COMMA  &kp DOT   &kp FSLH    &kp RBKT        &none  &none  &none  &none  &none  &none
-   &td0       &lt 1 RALT   &kp EQUAL  &kp BSLH  &none       &kp BSPC        &none  &none  &none  &none  &none  &none
-            >;
-        };
-
-        lower_layer {
-            bindings = <
-   &kp N6     &kp N7      &kp N8      &kp N9     &kp N0     &trans                     &trans &trans &trans &trans &trans &trans
-   &kp SQT    &kp LEFT    &kp DOWN    &kp UP     &kp RIGHT  &trans                     &trans &trans &trans &trans &trans &trans
-   &kp KP_N6  &kp KP_N7   &kp KP_N8   &kp KP_N9  &kp KP_N0  &trans                     &trans &trans &trans &trans &trans &trans
-   &trans     &trans      &kp EQUAL   &kp BSLH   &trans     &mo 2                      &trans &trans &trans &trans &trans &trans
+   &kp Y      &kp U        &kp I             &kp O             &kp P      &none           &none  &none  &none  &none  &none  &none
+   &kp H      &kp J        &kp K             &kp L             &kp SEMI   &kp BSPC        &none  &none  &none  &none  &none  &none
+   &kp N      &kp M        &kp COMMA         &kp DOT           &kp FSLH   &kp RBKT        &none  &none  &none  &none  &none  &none
+   &kp LSHFT  &mo 1        &kp EQUAL         &kp BSLH          &none      &mo 2           &none  &none  &none  &none  &none  &none
             >;
         };
 
         raise_layer {
             bindings = <
-   &trans &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &bootloader                        &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans &trans
+   &kp N6     &kp N7      &kp N8             &kp N9            &kp N0     &none         &trans &trans &trans &trans &trans &trans
+   &kp SQT    &kp LEFT    &kp DOWN           &kp UP            &kp RIGHT  &kp DEL       &trans &trans &trans &trans &trans &trans
+   &kp KP_N6  &kp KP_N7   &kp KP_N8          &kp KP_N9         &kp KP_N0  &trans        &trans &trans &trans &trans &trans &trans
+   &kp LSHFT  &trans      &kp RS(RA(EQUAL))  &kp RS(RA(BSLH))  &none      &kp RET       &trans &trans &trans &trans &trans &trans
+            >;
+        };
+
+        lower_layer {
+            bindings = <
+   &kp RA(Y)    &kp RA(U)  &kp RA(I)      &kp RA(O)    &kp RA(P)     &none           &trans &trans &trans &trans &trans &trans
+   &kp RA(H)    &kp RA(J)  &kp RA(K)      &kp RA(L)    &kp RA(SEMI)  &kp DEL         &trans &trans &trans &trans &trans &trans
+   &kp RA(N)    &kp RA(M)  &kp RA(COMMA)  &kp RA(DOT)  &kp RA(FSLH)  &trans          &trans &trans &trans &trans &trans &trans
+   &bootloader  &kp RET    &kp RA(EQUAL)  &kp RA(BSLH) &none         &trans          &trans &trans &trans &trans &trans &trans
             >;
         };
     };
